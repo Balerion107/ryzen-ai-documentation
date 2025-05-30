@@ -31,13 +31,18 @@ copyright = '2023-2024, Advanced Micro Devices, Inc'
 author = 'Advanced Micro Devices, Inc'
 
 # The short X.Y version
-version = '1.1'
+version = '1.4'
 # The full version, including alpha/beta/rc tags
-release = '1.1'
-html_last_updated_fmt = 'February 12, 2024'
+release = '1.4'
+html_last_updated_fmt = 'March 24, 2025'
 
 
 # -- General configuration ---------------------------------------------------
+
+html_baseurl = os.environ.get("READTHEDOCS_CANONICAL_URL", "ryzenai.docs.amd.com")
+html_context = {}
+if os.environ.get("READTHEDOCS", "") == "True":
+    html_context["READTHEDOCS"] = True
 
 # If your documentation needs a minimal Sphinx version, state it here.
 #
@@ -58,6 +63,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'linuxdoc.rstFlatTable',
     "notfound.extension",
 	#'recommonmark',
 	#'sphinx_markdown_tables',
@@ -100,6 +106,7 @@ templates_path = ['_templates']
 # Expand/Collapse functionality
 def setup(app):
     app.add_css_file('custom.css')
+    app.add_css_file("llm-table.css")
 
 
 # The suffix(es) of source filenames.
@@ -167,8 +174,8 @@ html_theme_options = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-##html_static_path = ['_static']
-##html_css_files = ['_static/custom.css']
+html_static_path = ["_static"]
+html_css_files = ["_static/llm-table.css"]
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
