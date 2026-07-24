@@ -374,8 +374,8 @@ In addition to the full RyzenAI software stack, we also provide standalone wheel
 
 .. code-block:: bash
 
-	pip install onnxruntime-genai-directml-ryzenai==0.14.0 --extra-index-url https://pypi.amd.com/ryzenai_llm/1.8.1/windows/simple/
-	pip install model-generate==1.8.0 --extra-index-url https://pypi.amd.com/ryzenai_llm/1.8.0/windows/simple/
+	pip install --extra-index-url https://pypi.amd.com/ryzenai_llm/1.8.0/windows/simple onnxruntime-genai-directml-ryzenai==0.14.0
+	pip install --extra-index-url https://pypi.amd.com/ryzenai_llm/1.8.0/windows/simple model-generate==1.8.0
 
 3. Navigate to your working directory and download the desired Hybrid/NPU model
 
