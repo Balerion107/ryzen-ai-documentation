@@ -5,4 +5,4 @@ Ryzen AI is released by Advanced Micro Devices, Inc. (AMD) and is subject to the
 
 - [AMD End User License Agreement](https://account.amd.com/content/dam/account/en/licenses/download/ryzen-ai-end-user-license-agreement-public.pdf)
 - [Windows - Third Party End User License Agreement](https://account.amd.com/content/dam/account/en/licenses/download/ryzen-ai-1-8-0-ga-tpn-license.pdf)
-- [Linux - Third Party End User License Agreement](https://account.amd.com/content/dam/account/en/licenses/download/ryzen-ai-1-8-0-ga-tpn-license.pdf)
+- [Linux - Third Party End User License Agreement](https://account.amd.com/content/dam/account/en/licenses/download/ryzen-ai-1-8-0-linux-tpn-license.pdf)
